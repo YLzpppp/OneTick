@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--backdrop container dimens ________ in fragment_home_with_backdrop.xml -->
+    <dimen name="backdrop_parent_linearlayout_paddingTop">100dp</dimen>
+    <dimen name="backdrop_parent_linearlayout_paddingBottom">120dp</dimen>
+    <dimen name="backdrop_parent_linearlayout_paddingStart">30dp</dimen>
+    <dimen name="backdrop_parent_linearlayout_paddingEnd">30dp</dimen>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mView.homeWithBackDrop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        android:elevation="0dp"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/backdrop_parent_linearlayout_paddingStart"
+        android:paddingTop="@dimen/backdrop_parent_linearlayout_paddingTop"
+        android:paddingEnd="@dimen/backdrop_parent_linearlayout_paddingEnd"
+        android:paddingBottom="@dimen/backdrop_parent_linearlayout_paddingBottom">
+        <!--TODO: a include backdrop layout here inside the LinearLayout-->
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/onetick_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="3dp"
+            app:contentInsetStart="0dp"
+            style="@style/OneTick_them_AppBar"
+
+            app:navigationIcon="@drawable/navigation_icon"
+            app:title="@string/app_name"
+            app:contentInsetStartWithNavigation="0dp"
+
+            app:titleTextColor="@color/secondaryTextColor"
+            app:titleTextAppearance="@android:style/TextAppearance.Medium"/>
+    </android.support.design.widget.AppBarLayout>
+</FrameLayout>
