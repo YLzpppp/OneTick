@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,12 +13,13 @@
         android:background="@color/primaryColor"
         android:elevation="0dp"
         android:orientation="vertical"
+        android:gravity="center_horizontal"
         android:paddingStart="@dimen/backdrop_parent_linearlayout_paddingStart"
         android:paddingTop="@dimen/backdrop_parent_linearlayout_paddingTop"
         android:paddingEnd="@dimen/backdrop_parent_linearlayout_paddingEnd"
         android:paddingBottom="@dimen/backdrop_parent_linearlayout_paddingBottom">
         <!--TODO: a include backdrop layout here inside the LinearLayout-->
-
+        <include layout="@layout/backdrop" />
     </LinearLayout>
 
     <android.support.design.widget.AppBarLayout
@@ -40,4 +42,96 @@
             app:titleTextColor="@color/secondaryTextColor"
             app:titleTextAppearance="@android:style/TextAppearance.Medium"/>
     </android.support.design.widget.AppBarLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/home_card_container"
+        android:elevation="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/floating_background">
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/card0"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:layout_marginTop="25dp"
+
+            app:cardCornerRadius="8dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:backgroundTint="@color/primaryLightColor"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="true"
+        >
+        <!--TODO: A RelativeLayout and a LinearLayout , two Editable component in Right side-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:orientation="horizontal">
+            <!--TODO:add contents , place ,time here within the Relativelayout-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="5.2"
+                android:layout_marginLeft="18dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/t1"
+                    android:text="default"/>
+            </RelativeLayout>
+            <!--TODO: add the checkbox , edit button here within the Linearlayout-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="8dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="3dp"
+            app:layout_constraintTop_toBottomOf="@id/card0"
+            app:layout_constraintStart_toStartOf="@id/home_card_container">
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="22dp"
+            android:elevation="3dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintTop_toBottomOf="@id/card1"
+            app:layout_constraintStart_toStartOf="@id/home_card_container">
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:layout_constraintTop_toBottomOf="@id/card2"
+            app:layout_constraintStart_toStartOf="@id/home_card_container">
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/card4"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="22dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:layout_constraintTop_toBottomOf="@id/card3"
+            app:layout_constraintStart_toStartOf="@id/home_card_container">
+        </android.support.design.card.MaterialCardView>
+    </android.support.constraint.ConstraintLayout>
 </FrameLayout>

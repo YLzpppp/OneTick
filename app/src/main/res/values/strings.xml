@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">OneTick</string>
 
-    <string name="reminders_lists">提醒事项</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reminders_lists">Reminders List</string>
+    <string name="my_date">  The Day</string>
+    <string name="my_account"> Accounts </string>
+    <string name="my_settings">Settings</string>
+    <string name="my_contact">Contact me</string>
 </resources>

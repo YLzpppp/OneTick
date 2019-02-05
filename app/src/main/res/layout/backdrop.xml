@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.design.button.MaterialButton
+        style="@style/OneTick_backdrop_textbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reminders_lists" />
+    <android.support.design.button.MaterialButton
+        style="@style/OneTick_backdrop_textbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_date"/>
+    <android.support.design.button.MaterialButton
+        style="@style/OneTick_backdrop_textbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_account"/>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="75dp"
+        android:layout_margin="16dp"
+        android:background="@color/secondaryTextColor"/>
+    <android.support.design.button.MaterialButton
+        style="@style/OneTick_backdrop_textbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_settings"/>
+    <android.support.design.button.MaterialButton
+        style="@style/OneTick_backdrop_textbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_contact"/>
+</merge>

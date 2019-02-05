@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--backdrop container dimens ________ in fragment_home_with_backdrop.xml -->
+    <dimen name="backdrop_parent_linearlayout_paddingTop">90dp</dimen>
+    <dimen name="backdrop_parent_linearlayout_paddingBottom">120dp</dimen>
+    <dimen name="backdrop_parent_linearlayout_paddingStart">30dp</dimen>
+    <dimen name="backdrop_parent_linearlayout_paddingEnd">30dp</dimen>
+
+    <dimen name="device_metric_width">360dp</dimen>
+    <dimen name="device_metric_height">640dp</dimen>
+
+    <!-- @link  res/drawable/floating_background.xml  -->
+    <dimen name="floating_background_width">360dp</dimen>
+    <dimen name="floating_background_height">640dp</dimen>
+    <dimen name="left_top_radius">28dp</dimen>
+    <dimen name="right_top_radius">28dp</dimen>
+
+    <!-- home fragment card dimens-->
+    <dimen name="card_width">330dp</dimen>
+    <dimen name="card_height">86dp</dimen>
+    <dimen name="card_radius">8dp</dimen>
+</resources>
