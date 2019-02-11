@@ -2,16 +2,19 @@
 <merge
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <android.support.design.button.MaterialButton
+        android:id="@+id/enter_reminder_pager"
         style="@style/OneTick_backdrop_textbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/reminders_lists" />
     <android.support.design.button.MaterialButton
+        android:id="@+id/enter_day_pager"
         style="@style/OneTick_backdrop_textbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/my_date"/>
     <android.support.design.button.MaterialButton
+        android:id="@+id/enter_accounts_pager"
         style="@style/OneTick_backdrop_textbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,11 +25,13 @@
         android:layout_margin="16dp"
         android:background="@color/secondaryTextColor"/>
     <android.support.design.button.MaterialButton
+        android:id="@+id/enter_setting_pager"
         style="@style/OneTick_backdrop_textbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/my_settings"/>
     <android.support.design.button.MaterialButton
+        android:id="@+id/enter_contact_pager"
         style="@style/OneTick_backdrop_textbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

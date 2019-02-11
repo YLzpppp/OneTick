@@ -12,11 +12,20 @@
     <!-- @link  res/drawable/floating_background.xml  -->
     <dimen name="floating_background_width">360dp</dimen>
     <dimen name="floating_background_height">640dp</dimen>
-    <dimen name="left_top_radius">28dp</dimen>
-    <dimen name="right_top_radius">28dp</dimen>
+    <dimen name="left_top_radius">18dp</dimen>
+    <dimen name="right_top_radius">18dp</dimen>
 
     <!-- home fragment card dimens-->
     <dimen name="card_width">330dp</dimen>
     <dimen name="card_height">86dp</dimen>
     <dimen name="card_radius">8dp</dimen>
+
+    <dimen name="backdrop_reveal_height">480dp</dimen>
+
+    <dimen name="trash_icon_margin">12dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="reminder_itemdeco_margin_bot">3dp</dimen>
 </resources>

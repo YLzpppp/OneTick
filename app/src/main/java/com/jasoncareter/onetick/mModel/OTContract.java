@@ -4,7 +4,7 @@ import android.content.ContentResolver;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
-public class OneTickContract {
+public class OTContract {
     /**
      *  uris , table entry , content type
      */
