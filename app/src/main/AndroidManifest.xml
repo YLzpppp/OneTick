@@ -12,13 +12,12 @@
         android:theme="@style/myTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".mPresenter.ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/myTheme.NoActionBar">
-        </activity>
-        <activity
-            android:name=".mPresenter.reminderList">
-        </activity>
+            android:name=".mPresenter.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity android:name=".mPresenter.MainAccActivity" />
+        <activity android:name=".mPresenter.reminderList" />
         <activity android:name=".mPresenter.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

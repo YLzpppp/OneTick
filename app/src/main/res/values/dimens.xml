@@ -10,10 +10,16 @@
     <dimen name="device_metric_height">640dp</dimen>
 
     <!-- @link  res/drawable/floating_background.xml  -->
-    <dimen name="floating_background_width">360dp</dimen>
-    <dimen name="floating_background_height">640dp</dimen>
-    <dimen name="left_top_radius">18dp</dimen>
-    <dimen name="right_top_radius">18dp</dimen>
+    <dimen name="floating_background_width">320dp</dimen>
+    <dimen name="floating_background_height">405dp</dimen>
+    <dimen name="left_top_radius">12dp</dimen>
+    <dimen name="right_top_radius">12dp</dimen>
+
+    <dimen name="acc_floating_background_width">320dp</dimen>
+    <dimen name="acc_floating_background_height">260dp</dimen>
+    <dimen name="acc_floating_background_radius">12dp</dimen>
+
+    <dimen name="acc_floating_input_width">240dp</dimen>
 
     <!-- home fragment card dimens-->
     <dimen name="card_width">330dp</dimen>
@@ -28,4 +34,17 @@
     <dimen name="text_margin">16dp</dimen>
 
     <dimen name="reminder_itemdeco_margin_bot">3dp</dimen>
+
+    <dimen name="new_reminder_background_size_height">405dp</dimen>
+    <dimen name="new_reminder_background_size_width">320dp</dimen>
+    <dimen name="new_reminder_background_size_radius">16dp</dimen>
+    <dimen name="new_reminder_background_size_relaradius">8dp</dimen>
+    <dimen name="new_reminder_locationicon_margin">5dp</dimen>
+    <dimen name="new_reminder_maintext_margin">10dp</dimen>
+
+    <dimen name="magic_tab_height">30dp</dimen>
+    <dimen name="magic_tab_width">220dp</dimen>
+
+    <dimen name="account_itemdeco_margin_bot">3dp</dimen>
+
 </resources>

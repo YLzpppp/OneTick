@@ -1,5 +1,5 @@
 package com.jasoncareter.onetick.mView;
-import android.content.Context;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,18 +10,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.jasoncareter.onetick.R;
+import com.jasoncareter.onetick.mPresenter.FullscreenActivity;
+import com.jasoncareter.onetick.mPresenter.MainAccActivity;
 import com.jasoncareter.onetick.mPresenter.MainActivity;
-import com.jasoncareter.onetick.mPresenter.ScrollingActivity;
 import com.jasoncareter.onetick.mPresenter.reminderList;
 
 public class homeWithBackDrop extends Fragment {
 
     private String value ;
-    private Button button ;
-    private Button button1;
+    private Button button_enter_rem ;
+    private Button button_enter_day ;
+    private Button button_enter_acc ;
 
     public homeWithBackDrop() {
         // Required empty public constructor
@@ -45,23 +46,36 @@ public class homeWithBackDrop extends Fragment {
         //TODO: Get device metrics
 //        TextView textView = (TextView)view.findViewById(R.id.t1);
 //        textView.setText(value);
-        button = (Button)view.findViewById(R.id.enter_reminder_pager ) ;
-        button.setOnClickListener( new View.OnClickListener(){
+
+        button_enter_rem = (Button)view.findViewById(R.id.enter_reminder_pager ) ;
+        button_enter_rem.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent  i = new Intent(getActivity() , reminderList.class);
+                Intent i = new Intent(getActivity() , reminderList.class);
+                startActivity(i);
+                getActivity().overridePendingTransition(R.anim.reminderlist_show , R.anim.mainactivity_exit);
+            }
+        });
+
+        button_enter_day = (Button)view.findViewById(R.id.enter_day_pager );
+        button_enter_day.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity() , FullscreenActivity.class);
                 startActivity(i);
             }
         });
 
-        button1 = (Button)view.findViewById(R.id.enter_accounts_pager );
-        button1.setOnClickListener(new View.OnClickListener() {
+        button_enter_acc = (Button)view.findViewById(R.id.enter_accounts_pager );
+        button_enter_acc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity() , ScrollingActivity.class);
+                Intent i = new Intent(getActivity() , MainAccActivity.class);
                 startActivity(i);
+                getActivity().overridePendingTransition(R.anim.reminderlist_show , R.anim.mainactivity_exit);
             }
         });
+
 
         return view ;
     }

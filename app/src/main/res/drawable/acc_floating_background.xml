@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="@dimen/acc_floating_background_width"
+        android:height="@dimen/acc_floating_background_height">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primaryTextColor" />
+            <size
+                android:width="@dimen/acc_floating_background_width"
+                android:height="@dimen/acc_floating_background_height"
+                />
+            <corners
+                android:radius="@dimen/acc_floating_background_radius"/>
+        </shape>
+    </item>
+</layer-list>

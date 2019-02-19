@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primaryTextColor"/>
+            <corners
+                android:topLeftRadius="@dimen/new_reminder_background_size_radius"
+                android:topRightRadius="@dimen/new_reminder_background_size_radius"/>
+            <size
+                android:height="@dimen/new_reminder_background_size_height"
+                android:width="@dimen/new_reminder_background_size_width"/>
+        </shape>
+    </item>
+</layer-list>

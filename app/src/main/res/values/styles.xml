@@ -2,25 +2,47 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="myaccountTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryColor</item>
         <item name="colorAccent">@color/primaryColor</item>
     </style>
     <!--<style name="myTheme.tranparent">-->
-        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
-        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+    <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
     <!--</style>-->
+    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/fromshrdark</item>
+        <item name="colorPrimaryDark">@color/fromshrdark</item>
+        <item name="colorControlNormal">@color/primaryTextColor</item>
+        <item name="colorControlActivated">@color/primaryTextColor</item>
+        <item name="colorControlHighlight">@color/fromshr</item>
+        <item name="colorAccent">@color/fromshracc</item>
+    </style>
 
     <style name="OneTick_them_AppBar" parent="Widget.Design.AppBarLayout">
-        <item name="android:background">@color/primaryColor</item>
+        <item name="android:background">@color/fromshrdark</item>
     </style>
 
     <style name="OneTick_backdrop_textbutton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">@color/secondaryTextColor</item>
         <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
-        <item name="android:fontFamily">"serif-monospace"</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+    <style name="OneTick_newReminder_textbutton_done" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/done</item>
+        <item name="rippleColor">@color/done</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Small</item>
+    </style>
+
+    <style name="OneTick_newReminder_textbutton_cancel" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/cancel</item>
+        <item name="rippleColor">@color/cancel</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Small</item>
     </style>
 
     <style name="myTheme.NoActionBar">
@@ -31,4 +53,20 @@
     <style name="myTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="myTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="new_reminder_maintext_edittext" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+
+    </style>
+
+    <style name="FullscreenTheme" parent="myTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
 </resources>
