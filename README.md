@@ -1,8 +1,14 @@
 # one tick  project  -- created by jasoncareter@icloud.com
 
 # PROJECT   SUMMARY
+
+# one newest feature including the backdrop( the Material Design haven't provided available way to implement this yet)
+
+![image text]()
+
+
 # part of Datas
-#Analysis
+# Analysis
         one database for dates
         one database for accounts
         one JSON file to store reminders
@@ -12,13 +18,11 @@
 
 # SQLiteDatabase  :
 OneTickContract :
-        cpnyains constant strings  , uri , table entry , content type ( item , list)
-
+        constant strings  , uri , table entry , content type ( item , list)
 OneTickSQLiteHelper :
         a/ implements the interface SQLiteOpenHelper
         b/ database version , name fieds
         c/ @Override  onCreate() , onUpdate() method   |   execute SQLite DSL
-
 OneTickContentProvider :
         a/ one more ids for UriMatcher
         b/ static { } , authority plus table and ids
