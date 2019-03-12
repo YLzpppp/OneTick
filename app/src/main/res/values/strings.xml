@@ -10,10 +10,11 @@
     <string name="reminder_tint">"\n      Write down the things you're gonna to do right here \n      Try make it short and clear\nCool  !\n    tips : touch me to quick edit"</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello My Friend</string>
 
     <string name="newreminder_done">Done</string>
     <string name="newreminder_cancel">Cancel</string>
+    <string name="newreminder_startnewreminder">Start New Reminder</string>
 
     <string name="action_settings">Settings</string>
 
@@ -24,7 +25,9 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    
-    <string name="acc_floating_account_text">Account :</string>
-    <string name="acc_floating_password_text">Password :</string>
+
+    <string name="acc_floating_account_text">Account</string>
+    <string name="acc_floating_password_text">Password</string>
+
+    <string name="textinput_address">address : </string>
 </resources>

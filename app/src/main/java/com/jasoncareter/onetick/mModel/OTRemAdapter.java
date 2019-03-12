@@ -27,11 +27,26 @@ public class OTRemAdapter extends RecyclerView.Adapter<reminderViewHolder> {
     @Override
     public void onBindViewHolder( reminderViewHolder viewHolder, int position) {
         OTRemDataObject currentdata = dataset.get(position);
-        viewHolder.maintext.setText( currentdata.getContent());
+        String tempMainText = currentdata.getContent();
+        String tempPlaceText = currentdata.getPlace() ;
+        String content = tempMainText +"\n"+"\n"+tempPlaceText ;
+        viewHolder.maintext.setText( content );
         viewHolder.timetext.setText(currentdata.getTime());
+        viewHolder.datetext.setText(currentdata.getDate());
     }
 
     @Override
     public int getItemCount() {  return dataset.size() ; }
+
+    public void addItem(OTRemDataObject newItem){
+        dataset.add(0,newItem);
+        notifyItemInserted(0);
+        notifyItemRangeChanged(0,getItemCount());
+    }
+
+    public void deleteItem(int position){
+        dataset.remove(position);
+        notifyItemRemoved(position);
+    }
 
 }

@@ -5,11 +5,20 @@ import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
+import com.jasoncareter.onetick.mModel.OTRemAdapter;
+
 public class itemtouchcallback extends ItemTouchHelper.Callback {
+
+    private OTRemAdapter madapter;
+
+    public itemtouchcallback(OTRemAdapter madapter){
+        this.madapter = madapter ;
+    }
+    // setup and return the item's direction that being dragged or swiped to
     @Override
     public int getMovementFlags( RecyclerView recyclerView,  RecyclerView.ViewHolder viewHolder) {
         int dragflag = ItemTouchHelper.DOWN | ItemTouchHelper.UP ;
-        int swipeflag = ItemTouchHelper.END |ItemTouchHelper.START ;
+        int swipeflag = ItemTouchHelper.START ;
         return makeMovementFlags( dragflag ,swipeflag ) ;
     }
 
@@ -20,16 +29,16 @@ public class itemtouchcallback extends ItemTouchHelper.Callback {
 
     @Override
     public void onSwiped( RecyclerView.ViewHolder viewHolder, int i) {
-
+        madapter.deleteItem(viewHolder.getAdapterPosition());
     }
 
     @Override
     public boolean isLongPressDragEnabled() {
-        return super.isLongPressDragEnabled();
+        return false;
     }
 
     @Override
     public boolean isItemViewSwipeEnabled() {
-        return super.isItemViewSwipeEnabled();
+        return true;
     }
 }

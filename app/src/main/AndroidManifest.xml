@@ -11,19 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/myTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity
-            android:name=".mPresenter.FullscreenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_fullscreen"
-            android:theme="@style/FullscreenTheme"></activity>
-        <activity android:name=".mPresenter.MainAccActivity" />
-        <activity android:name=".mPresenter.reminderList" />
-        <activity android:name=".mPresenter.MainActivity">
+        <activity android:name=".mPresenter.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".mPresenter.MainAccActivity" />
+        <activity android:name=".mPresenter.reminderList" />
+        <activity android:name=".mPresenter.MainActivity">
         </activity>
 
         <provider

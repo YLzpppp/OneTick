@@ -36,4 +36,10 @@ public class OTAccAdapter extends RecyclerView.Adapter<accountViewHolder> {
     public int getItemCount() {
         return dataset.size();
     }
+
+    public void deleteItem(int position){
+        dataset.remove(position);
+        notifyItemRemoved(position);
+    }
+
 }

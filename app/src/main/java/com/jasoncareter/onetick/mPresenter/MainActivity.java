@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationHost{
     }
 
     @Override
-    public void navigateTo(Fragment fragment ,boolean addToBackStack) {
+    public void navigateToFrag(Fragment fragment ,boolean addToBackStack) {
         FragmentTransaction transaction = getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.parent ,fragment);

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="backdrop_parent_linearlayout_paddingTop">120.0000dp</dimen>
+	<dimen name="backdrop_parent_linearlayout_paddingBottom">160.0000dp</dimen>
+	<dimen name="backdrop_parent_linearlayout_paddingStart">40.0000dp</dimen>
+	<dimen name="backdrop_parent_linearlayout_paddingEnd">40.0000dp</dimen>
+	<dimen name="device_metric_width">480.0000dp</dimen>
+	<dimen name="device_metric_height">853.3333dp</dimen>
+	<dimen name="floating_background_width">480.0000dp</dimen>
+	<dimen name="floating_background_height">693.3333dp</dimen>
+	<dimen name="left_top_radius">16.0000dp</dimen>
+	<dimen name="right_top_radius">16.0000dp</dimen>
+	<dimen name="acc_floating_background_width">426.6667dp</dimen>
+	<dimen name="acc_floating_background_height">346.6667dp</dimen>
+	<dimen name="acc_floating_background_radius">16.0000dp</dimen>
+	<dimen name="acc_floating_input_width">346.6667dp</dimen>
+	<dimen name="card_width">440.0000dp</dimen>
+	<dimen name="card_height">114.6667dp</dimen>
+	<dimen name="card_radius">10.6667dp</dimen>
+	<dimen name="backdrop_reveal_height">640.0000dp</dimen>
+	<dimen name="trash_icon_margin">16.0000dp</dimen>
+	<dimen name="app_bar_height">240.0000dp</dimen>
+	<dimen name="fab_margin">21.3333dp</dimen>
+	<dimen name="text_margin">21.3333dp</dimen>
+	<dimen name="reminder_itemdeco_margin_bot">4.0000dp</dimen>
+	<dimen name="new_reminder_background_size_height">540.0000dp</dimen>
+	<dimen name="new_reminder_background_size_width">426.6667dp</dimen>
+	<dimen name="new_reminder_background_size_radius">21.3333dp</dimen>
+	<dimen name="new_reminder_background_size_relaradius">10.6667dp</dimen>
+	<dimen name="new_reminder_locationicon_margin">6.6667dp</dimen>
+	<dimen name="new_reminder_maintext_margin">13.3333dp</dimen>
+	<dimen name="magic_tab_height">40.0000dp</dimen>
+	<dimen name="magic_tab_width">293.3333dp</dimen>
+	<dimen name="account_itemdeco_margin_bot">4.0000dp</dimen>
+</resources>

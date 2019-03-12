@@ -136,6 +136,13 @@ public class OTRemData {
     }
 
 }
+/*
+ * add new object:
+ * 1. call @readJsonFile() , return the whole string
+ * 2. call @getNewJsonObj() , get a new object contains information from user
+ * 3. call @writeObj ()  , add the new object into  the whole json file
+ * 4. call @writeJsonFile , finish information update action
+ */
 
 
 

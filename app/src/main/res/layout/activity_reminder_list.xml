@@ -53,16 +53,19 @@
             android:layout_weight="6"
             android:orientation="vertical">
             <android.support.design.widget.TextInputLayout
-                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:id="@+id/new_reminder_maintext_layout"
+                android:layout_height="wrap_content"
                 android:layout_weight="5"
                 android:layout_width="match_parent"
-                android:hint="Start New Reminder"
+                android:hint="@string/newreminder_startnewreminder"
                 >
                 <android.support.design.widget.TextInputEditText
+                    android:id="@+id/new_reminder_maintext"
                     android:cursorVisible="true"
                     android:layout_margin="@dimen/new_reminder_maintext_margin"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:textAppearance="@android:style/TextAppearance.Small"
                     />
             </android.support.design.widget.TextInputLayout>
@@ -70,22 +73,23 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:src="@drawable/location"
-                    android:layout_gravity="start" />
+                    android:layout_gravity="start" />ƒ
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_weight="12"
                     android:layout_height="match_parent"
                     android:hint="Enter the place"
-
+                    android:id="@+id/new_reminder_place_layout"
                     >
                     <android.support.design.widget.TextInputEditText
+                        android:id="@+id/new_reminder_place"
                         android:cursorVisible="true"
                         android:layout_marginStart="@dimen/new_reminder_locationicon_margin"
                         android:layout_marginEnd="4dp"
@@ -100,21 +104,21 @@
             </LinearLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="horizontal"
             android:layout_weight="4">
-
             <TimePicker
-                android:scaleY="1"
-                android:scaleX="1"
-                android:layout_width="0dp"
+                android:id="@+id/new_reminder_timepicker"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_height="match_parent"
-                android:layout_weight="4"
                 android:timePickerMode="spinner">
             </TimePicker>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
