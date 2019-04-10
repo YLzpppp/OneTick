@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # one tick  project  -- created by jasoncareter@icloud.com
 
 # PROJECT   SUMMARY
@@ -11,29 +10,7 @@
                       type : SQLiteDatabase , Json
         total of Files  : database x2 , JsonFile x1
 
-# SQLiteDatabase  :
-OneTickContract :
-        cpnyains constant strings  , uri , table entry , content type ( item , list)
-
-OneTickSQLiteHelper :
-        a/ implements the interface SQLiteOpenHelper
-        b/ database version , name fieds
-        c/ @Override  onCreate() , onUpdate() method   |   execute SQLite DSL
-
-OneTickContentProvider :
-        a/ one more ids for UriMatcher
-        b/ static { } , authority plus table and ids
-        c/ initialize the custom *helper in the  boolean onCreate() method  , Cursor query() ,
-        int delete() , int update() , Uri insert() , String getType()
-=======
-# one tick  project  -- created by jasoncareter@icloud.com
-
-# PROJECT   SUMMARY
-
 # one newest feature including the backdrop( the Material Design haven't provided available way to implement this yet)
-
-
-
 
 # part of Datas
 # Analysis
@@ -44,16 +21,20 @@ OneTickContentProvider :
                       type : SQLiteDatabase , Json
         total of Files  : database x2 , JsonFile x1
 
-# SQLiteDatabase  :
-OneTickContract :
-        constant strings  , uri , table entry , content type ( item , list)
-OneTickSQLiteHelper :
-        a/ implements the interface SQLiteOpenHelper
-        b/ database version , name fieds
-        c/ @Override  onCreate() , onUpdate() method   |   execute SQLite DSL
-OneTickContentProvider :
-        a/ one more ids for UriMatcher
-        b/ static { } , authority plus table and ids
-        c/ initialize the custom *helper in the  boolean onCreate() method  , Cursor query() ,
-        int delete() , int update() , Uri insert() , String getType()
->>>>>>> 3b0f08c91245cf075170745a594b3e5083a97ceb
+## Demonstrate part of App's functions
+
+<font size=6 color=#ee0000>vedio were compressed and formated into GIF ,the frame is decreased to less than 20 frame . that's why the operation seems slow and nonfluency</font>
+
+![one](https://github.com/YLzpppp/OneTick/blob/master/1.gif)
+
+***
+
+![two](https://github.com/YLzpppp/OneTick/blob/master/2.gif)
+
+***
+
+![three](https://github.com/YLzpppp/OneTick/blob/master/3.gif)
+
+***
+
+![four](https://github.com/YLzpppp/OneTick/blob/master/4.gif)
