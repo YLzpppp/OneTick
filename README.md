@@ -23,7 +23,7 @@
 
 ## Demonstrate part of App's functions
 
-<font size=6 color=#ee0000>vedio were compressed and formated into GIF ,the frame is decreased to less than 20 frame . that's why the operation seems slow and nonfluency</font>
+**Attention !!!   vedio were compressed and formated into GIF ,the frame is decreased to less than 20 frame . that's why the operation seems  slow and nonfluency   . You may need to wait a little bit more to see all the four gifs work for the pics' size are more than 30MB **
 
 ![one](https://github.com/YLzpppp/OneTick/blob/master/1.gif)
 
